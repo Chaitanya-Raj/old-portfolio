@@ -5,7 +5,7 @@ body {
   font-family: "Quicksand", sans-serif;
   font-size: 18px;
   box-sizing: border-box;
-  background: #212121;
+  background: #dfdfdf;
   overflow-x: hidden;
   /* display: flex; */
 }
@@ -43,7 +43,7 @@ a:hover {
 
 .sidebar img {
   border-radius: 50%;
-  border: 5px solid #050503;
+  box-shadow: 0 0 10px black;
   width: 60%;
   margin: 80px 0;
   animation: fade-in 2s ease-in;
@@ -92,7 +92,7 @@ a:hover {
   margin: 2em;
   margin-left: 30vw;
   line-height: 1.5;
-  color: #bfbfbf;
+  color: #050503;
 }
 
 .project {
@@ -116,7 +116,7 @@ a:hover {
 
 .project a {
   margin: 10px;
-  color: #bfbfbf;
+  color: #050503;
   animation: fade-in 3s ease-in;
 }
 
@@ -205,6 +205,7 @@ a:hover {
 
   .content {
     margin: auto;
+    color: #bfbfbf;
   }
 
   .project {
@@ -216,5 +217,9 @@ a:hover {
 
   .project h1 {
     font-size: 1.5rem;
+  }
+
+  .project a {
+    color: #bfbfbf;
   }
 }
