@@ -195,6 +195,7 @@ body {
   .social {
     transform: scale(0.8);
     margin: 10px;
+    flex-wrap: nowrap;
   }
 
   .content {
