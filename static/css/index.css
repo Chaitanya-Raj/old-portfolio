@@ -3,9 +3,9 @@
 body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
-  font-size: 18px;
+  /* font-size: 18px; */
   box-sizing: border-box;
-  background: #dfdfdf;
+  background: #bfbfbf;
   overflow-x: hidden;
   /* display: flex; */
 }
@@ -93,6 +93,7 @@ a:hover {
   margin-left: 30vw;
   line-height: 1.5;
   color: #050503;
+  text-shadow: 0 0 1px #000;
 }
 
 .project {
