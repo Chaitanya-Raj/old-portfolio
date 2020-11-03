@@ -125,10 +125,10 @@ a:hover {
 
 @keyframes slide-in-right {
   from {
-    transform: translateX(550px);
+    transform: translateY(-550px);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
