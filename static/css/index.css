@@ -5,7 +5,7 @@ body {
   font-family: "Quicksand", sans-serif;
   /* font-size: 18px; */
   box-sizing: border-box;
-  background: #222;
+  background: #bfbfbf;
   overflow-x: hidden;
   /* display: flex; */
 }
@@ -84,13 +84,13 @@ a:hover {
 .sidebar h2 {
   font-size: 1.8rem;
   font-family: "Lora", serif;
-  margin-bottom: 50px;
   animation: fade-in 2s ease-in;
   text-align: center;
 }
 
 .social {
   margin: 30px;
+  margin-top: 50px;
   animation: fade-in 2s ease-in;
   display: flex;
   flex-wrap: wrap;
@@ -115,23 +115,35 @@ a:hover {
   margin-left: 30vw;
   line-height: 1.5;
   color: #bfbfbf;
+  animation: slide-in-top 2s ease-out;
   text-shadow: 0 0 1px #000;
 }
 
-.project {
-  margin: 50px;
-  animation: slide-in-right 2s ease-out;
+.content h1 {
+  color: #222;
+  font-size: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  margin-left: 50px;
+  text-transform: uppercase;
+  animation: fade-in 3s ease-in;
+  text-shadow: 1px 1px 1px #000;
 }
 
-.project h1 {
+.project {
+  margin: 80px;
+}
+
+.project h2 {
   font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-weight: 600;
+  color: #222;
   margin: 0;
   animation: fade-in 3s ease-in;
-  text-shadow: 3px 3px 10px #000;
-  /* text-transform: uppercase; */
+  text-shadow: 1px 1px 1px #000;
 }
 
 .links {
@@ -140,17 +152,59 @@ a:hover {
 
 .project a {
   margin: 10px;
-  color: #bfbfbf;
+  color: #222;
   animation: fade-in 3s ease-in;
-  text-shadow: 3px 3px 10px #000;
+  text-shadow: 1px 1px 1px #000;
 }
 
-@keyframes slide-in-right {
+@keyframes slide-in-top {
   from {
     transform: translateY(-550px);
   }
   to {
     transform: translateY(0);
+  }
+}
+
+.about-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35vw;
+  min-height: 100vh;
+  display: flex;
+  background: #000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #bfbfbf;
+  text-shadow: 3px 3px 5px #000;
+  box-shadow: 0 0 20px #000;
+  animation: slide-in-right 2s ease-out;
+}
+
+.about-sidebar h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+}
+
+.about-sidebar p {
+  padding: 0 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+
+.about-sidebar a {
+  color: #bfbfbf;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(550px);
+  }
+  to {
+    transform: translateX(0);
   }
 }
 
@@ -180,8 +234,12 @@ a:hover {
     margin-left: 35vw;
   }
 
-  .project h1 {
+  .project h2 {
     font-size: 1.6rem;
+  }
+
+  .about-sidebar {
+    width: 35vw;
   }
 }
 
@@ -228,9 +286,28 @@ a:hover {
     flex-wrap: nowrap;
   }
 
+  .about-sidebar {
+    animation: none;
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  .about-sidebar p {
+    font-weight: 200;
+    font-size: 1.1rem;
+  }
+
   .content {
     margin: auto;
     color: #bfbfbf;
+  }
+
+  .content h1 {
+    margin: 0;
+    color: #bfbfbf;
+    margin-top: 40px;
+    text-align: center;
   }
 
   .project {
@@ -240,7 +317,8 @@ a:hover {
     justify-content: space-between;
   }
 
-  .project h1 {
+  .project h2 {
+    color: #bfbfbf;
     font-size: 1.5rem;
   }
 
