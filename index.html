@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chaitanya Raj</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -72,7 +77,8 @@
             rel="noopener noreferrer"
             >reading any books</a
           >
-          that I can lay my hands on. I'm currently learning Photoshop and Blender in my spare time.
+          that I can lay my hands on. I'm currently learning Photoshop and
+          Blender in my spare time.
         </p>
         <p>
           I also love listening to
@@ -176,5 +182,15 @@
         </div>
       </div>
     </main>
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+      $(window).on("load", function () {
+        $(".loader-wrapper").delay(500).fadeOut("slow");
+      });
+    </script>
   </body>
 </html>

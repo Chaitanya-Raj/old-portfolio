@@ -10,6 +10,73 @@ body {
   /* display: flex; */
 }
 
+/* Loading Animation */
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #bfbfbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #000;
+  animation: loader 1s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #000;
+  animation: loader-inner 1s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
 /* Custom Scrollbar */
 
 /* width */
@@ -51,7 +118,7 @@ a:hover {
   color: #bfbfbf;
   text-shadow: 3px 3px 5px #000;
   box-shadow: 0 0 20px #000;
-  animation: slide-in-left 2s ease-out;
+  animation: slide-in-left 1s ease-out;
 }
 
 @keyframes slide-in-left {
@@ -68,7 +135,7 @@ a:hover {
   box-shadow: 0 0 10px black;
   width: 60%;
   margin: 80px 0;
-  animation: fade-in 2s ease-in;
+  animation: fade-in 1s ease-in;
   /* filter: invert(1); */
 }
 
@@ -76,7 +143,7 @@ a:hover {
   font-size: 2.7rem;
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  animation: fade-in 2s ease-in;
+  animation: fade-in 1s ease-in;
   text-transform: uppercase;
   text-align: center;
 }
@@ -84,14 +151,14 @@ a:hover {
 .sidebar h2 {
   font-size: 1.8rem;
   font-family: "Lora", serif;
-  animation: fade-in 2s ease-in;
+  animation: fade-in 1s ease-in;
   text-align: center;
 }
 
 .social {
   margin: 30px;
   margin-top: 50px;
-  animation: fade-in 2s ease-in;
+  animation: fade-in 1s ease-in;
   display: flex;
   flex-wrap: wrap;
 }
@@ -115,7 +182,7 @@ a:hover {
   margin-left: 30vw;
   line-height: 1.5;
   color: #bfbfbf;
-  animation: slide-in-top 2s ease-out;
+  /* animation: slide-in-top 1s ease-out; */
   text-shadow: 0 0 1px #000;
 }
 
@@ -127,7 +194,7 @@ a:hover {
   font-weight: 600;
   margin-left: 50px;
   text-transform: uppercase;
-  animation: fade-in 3s ease-in;
+  animation: fade-in 1s ease-in;
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -142,7 +209,7 @@ a:hover {
   font-weight: 600;
   color: #222;
   margin: 0;
-  animation: fade-in 3s ease-in;
+  animation: fade-in 1s ease-in;
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -153,7 +220,7 @@ a:hover {
 .project a {
   margin: 10px;
   color: #222;
-  animation: fade-in 3s ease-in;
+  animation: fade-in 1s ease-in;
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -180,7 +247,7 @@ a:hover {
   color: #bfbfbf;
   text-shadow: 3px 3px 5px #000;
   box-shadow: 0 0 20px #000;
-  animation: slide-in-right 2s ease-out;
+  animation: slide-in-right 1s ease-out;
 }
 
 .about-sidebar h1 {
@@ -250,11 +317,23 @@ a:hover {
     background: #050503;
   }
 
+  .loader-wrapper {
+    background-color: #000;
+  }
+
+  .loader {
+    border: 4px solid #bfbfbf;
+  }
+
+  .loader-inner {
+    background-color: #bfbfbf;
+  }
+
   .sidebar {
     position: relative;
     min-width: 100vw;
     min-height: 100vh;
-    animation: slide-down 2s ease-out;
+    animation: slide-down 1s ease-out;
   }
 
   @keyframes slide-down {
