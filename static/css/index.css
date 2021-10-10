@@ -180,29 +180,63 @@ a:hover {
 .content {
   margin: 2em;
   margin-left: 30vw;
+  margin-right: 30vw;
   line-height: 1.5;
   color: #bfbfbf;
   /* animation: slide-in-top 1s ease-out; */
   text-shadow: 0 0 1px #000;
 }
 
-.content h1 {
+.content-switch {
+  display: flex;
+}
+
+.content-switch h1 {
+  text-align: center;
   color: #222;
   font-size: 2.2rem;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-weight: 600;
-  margin-left: 50px;
+  margin: 50px;
   text-transform: uppercase;
   animation: fade-in 1s ease-in;
   text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
 }
 
-.project {
-  margin: 80px;
+.inactive {
+  color: #777 !important;
+  text-shadow: 1px 1px 1px #777 !important;
 }
 
-.project h2 {
+#projects {
+  display: flex;
+  flex-direction: column;
+}
+
+#blogs {
+  display: none;
+  flex-direction: column;
+}
+
+.section-header {
+  display: none;
+}
+
+.project,
+.blog {
+  margin: 30px 80px;
+}
+
+.blog {
+  text-align: right;
+  padding-right: 60px;
+}
+
+.project h2,
+.blog h2 {
+  text-decoration: none;
   font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
@@ -217,7 +251,8 @@ a:hover {
   display: flex;
 }
 
-.project a {
+.project a,
+.blog a {
   margin: 10px;
   color: #222;
   animation: fade-in 1s ease-in;
@@ -301,7 +336,8 @@ a:hover {
     margin-left: 35vw;
   }
 
-  .project h2 {
+  .project h2,
+  .blog h2 {
     font-size: 1.6rem;
   }
 
@@ -382,26 +418,37 @@ a:hover {
     color: #bfbfbf;
   }
 
-  .content h1 {
-    margin: 0;
-    color: #bfbfbf;
-    margin-top: 40px;
-    text-align: center;
+  .content-switch {
+    justify-content: center;
   }
 
-  .project {
+  .content-switch h1 {
+    font-size: 1.8rem;
+    color: #bfbfbf;
+    margin: 20px;
+  }
+
+  .project,
+  .blog {
     animation: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .project h2 {
     color: #bfbfbf;
-    font-size: 1.5rem;
   }
 
-  .project a {
+  .blog {
+    padding-right: auto;
+  }
+
+  .project h2,
+  .blog h2 {
+    font-size: 1.5rem;
+    color: #bfbfbf;
+  }
+
+  .project a,
+  .blog a {
     color: #bfbfbf;
   }
 }
