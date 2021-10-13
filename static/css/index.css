@@ -110,7 +110,7 @@ a:hover {
   width: 30vw;
   min-height: 100vh;
   display: flex;
-  background-image: url("../img/sidebar.jpg");
+  background-image: url("../img/sidebar.webp");
   background-size: cover;
   flex-direction: column;
   align-items: center;
@@ -188,17 +188,21 @@ a:hover {
 }
 
 .content-switch {
+  width: 90%;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .content-switch h1 {
   text-align: center;
+  justify-content: center;
+  align-items: center;
   color: #222;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-weight: 600;
-  margin: 50px;
   text-transform: uppercase;
   animation: fade-in 1s ease-in;
   text-shadow: 1px 1px 1px #000;
@@ -346,7 +350,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   body {
     display: flex;
     flex-direction: column;
@@ -419,7 +423,7 @@ a:hover {
   }
 
   .content-switch {
-    justify-content: center;
+    width: 100%;
   }
 
   .content-switch h1 {
@@ -435,10 +439,6 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     color: #bfbfbf;
-  }
-
-  .blog {
-    padding-right: auto;
   }
 
   .project h2,
