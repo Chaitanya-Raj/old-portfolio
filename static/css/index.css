@@ -362,6 +362,11 @@ a:hover {
     margin-left: 35vw;
   }
 
+  .content-switch {
+    display: flex;
+    flex-direction: column;
+  }
+
   .project h2,
   .blog h2 {
     font-size: 1.6rem;
